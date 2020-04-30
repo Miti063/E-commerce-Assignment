@@ -1,16 +1,17 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-const HomeScreen = (props) =>  {
+import ScreenContainer from '../components/ScreenContainer';
+import FetchLocation from '../components/FetchLocation';
+
+const HomeScreen = (props) => {
   return (
-    <View>
-<Text>HomeScreen</Text>
-    </View>
-  )
-}
+    <ScreenContainer>
+      <FetchLocation />
+    </ScreenContainer>
+  );
+};
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({});
 
-});
-
-export default HomeScreen
+export default HomeScreen;
